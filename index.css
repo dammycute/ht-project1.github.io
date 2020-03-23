@@ -1,0 +1,530 @@
+/*Choosing color:
+1. my dominant color is purple #985986
+2. where to use them:
+Logo, header' call to action button, Hightlight important info, Title and Headlines, buutons.
+3. Accent colors: subtitles, footer, etc
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Consolas;
+    background-color: lightgrey;
+    font-size: 18px;
+}
+header{
+    height: 60px;
+    background-color: limegreen;
+    margin-bottom: 50px;
+    box-shadow: 5px 3px 3px grey;
+    
+
+
+}
+.logo{
+    line-height: 60px;
+    float: left;
+    padding: 0 20px;
+    transition: 5s ease-in-out;
+}
+.logo a{
+    text-decoration: none;
+}
+
+nav ul{
+    
+    float: left;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    
+    
+}
+nav ul li{
+    position: relative;
+    float: left;
+    
+    list-style: none;
+}
+nav ul li a{
+    display: inline-block;
+    color: mintcream; ;
+    padding: 7px 14px;
+    text-decoration: none;
+}
+nav ul li ul{
+    position: absolute;
+    display: none;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li a{
+    padding: 8px 14px;
+    width: 200px;
+    color: fuchsia;
+    /* background-color: rgb(246, 250, 246); */
+    font-weight: 550;
+
+}
+nav ul li ul li {
+    position: relative;
+}
+nav ul li ul .sec ul{
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+/*vertical menu in css*/
+nav ul li ul .sec:hover ul{
+    display: block;
+    left:95%;
+    top: -2%; 
+    transition: 5s ease-in;
+    
+}
+
+
+
+ .change{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 100px;
+    
+    
+}
+.change h1{
+    width: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.change .image{
+    
+    margin-left: 100px;
+    border: 10px solid transparent;
+    padding: 15px;
+    max-width: 1000px;
+    position: relative;
+   
+    
+}
+.change img{
+    /*making the picture to have rounded shape*/
+    border-radius: 90%;
+}
+.change img:hover{
+    opacity: 0.5;
+    color:lime;
+}
+.change p{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.center p {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.small_con{
+    display: flex;
+    justify-content: space-around;
+}
+.desc{
+    background-color: rgb(6, 192, 6);
+    text-align: center;
+    color: white;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+.desc h1{
+    margin-bottom: 30px;
+}
+.desc p{
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+.recent{
+    margin-top: 30px;
+    background-color: lavender;
+    flex-direction: row;
+    box-shadow: 5px 5px 5px 5px grey;
+
+    
+    align-items: center;
+    color: black;
+}
+.recent h1{
+    
+    text-align: center;
+}
+.recent img{
+    width: 350px;
+    margin: 20px ;
+    display: flex;
+    height: 300px;
+    
+   
+}
+.projects{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    backface-visibility: hidden;
+}
+/* project---> container
+webpage--> overlay
+linkky---> text
+first-img---> image */
+.first-img{
+    display: block;
+
+}
+.webpage{
+     position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+
+}
+.linkky{
+    white-space: nowrap;
+    color: gold;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.first:hover {
+    opacity: 0.4;
+    display: block;
+    z-index: 3;
+   
+}
+.second:hover {
+    opacity: 0.6;
+    display: block;
+    z-index: 3;
+}
+.third:hover {
+    opacity: 0.6;
+    display: block;
+    z-index: 3;
+}
+.second{
+    
+}
+.foot{
+    background-color: lime;
+    margin-top: 40px;
+    
+
+}
+.foot{
+    font-weight: 500;
+}
+.contact{
+    max-width: 400px;
+    margin-bottom: 50px;
+    
+}
+.contact li img{
+    border-radius: 10px;
+    max-width: 50px;
+}
+.contact li{
+    padding: 13px 14px;
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 550;
+    border: none;
+    
+}
+.about li{
+    list-style: none;
+    padding: 13px 14px;
+}
+.about li a{
+    text-decoration: none;
+    color: fuchsia;
+    font-weight: 600;
+}
+.short{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    
+}
+.short p{
+    color:brown;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 15px;
+    
+}
+.short h2{
+    margin-top: 15px;
+    
+}
+.short .few{
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+.few h2{
+    text-align: center;
+}
+button[type=submit]{
+    background-color: brown;
+    padding: 10px 12px;
+    cursor: pointer;
+    color: white;
+    border-radius: 13px;
+    border: 2px solid whitesmoke;
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px ghostwhite;
+    font-size: 20px;
+}
+button[type=submit]:hover{
+    background-color: white;
+    color: brown;
+    box-shadow: 2px 3px gainsboro;
+    font-size: 20px;
+    font-weight: 550;
+}
+.input, button, textarea{
+    max-width: 250px;
+    border-radius: 15px;
+    padding: 14px 20px;
+    font-size: 17px;
+    box-shadow: 4px 4px 4px 4px rgb(102, 92, 73);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    resize: none;
+    border: none;
+}
+form{
+    margin-top: 20px;
+    border: none;
+}
+form p,h4{
+    font-size: 18px;
+    font-weight: 550;
+    color: brown;
+}
+
+form h4{
+    font-size: 18px;
+    font-weight: 550;
+    color: fuchsia;
+   
+    
+}
+@media screen and (max-width: 850px){
+    
+    body{
+        font-size: 13px;
+        font-weight: 400;
+        width: auto;
+        color:none;
+        max-width: 100%;
+        
+    }
+    
+    header{
+        max-width: inherit;
+        
+
+    }
+    .logo{
+        transition: 3s ease-out;
+        
+        margin: 0 auto;
+        
+    }
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    nav{
+        position: relative;
+    }
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        top:30px;
+        right:5px;
+        transform: translate(-3%, -50%);
+        z-index: 3;
+    }
+    .nav-links{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: gold;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path:  circle(1px at 90% -5%);
+        -webkit-clip-path: (1px at 90% -5%);
+        transition: all 3s ease-out;
+        z-index:1;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        pointer-events: all;
+        clip-path: circle(10px at 90% -5%);
+        -webkit-clip-path: circle(1390px at 90% -5%)
+        
+    }
+    .dropbtn{
+        /* background-color: gold; */
+        /* border: 1px solid; */
+    }
+    .drop-cont{
+        display: inline !important;
+        
+        line-height: 25px;
+        
+        /* background-color: gold; */
+        
+        
+    }
+    
+    nav ul{
+        
+        float: none;
+        /* color: white; */
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+    }
+    nav ul li{
+        position: relative;
+        float: none;
+        display: block;
+        list-style: none;
+    }
+    nav ul li a{
+        display: inline-block;
+        color: mintcream; 
+        padding: 7px 8px;
+        text-decoration: none;
+    }
+    nav ul li ul{
+        position: relative;
+        display: block;
+    }
+    nav ul li ul li a{
+        padding: 8px 14px;
+        width: 200px;
+        color: gray;
+        /* background-color: gold; */
+    
+    }
+    nav ul li ul li {
+        position: relative;
+    }
+    nav ul li ul .sec ul{
+        position: relative;
+        display: inline-block;
+
+    }
+       
+    nav ul li ul .sec:hover ul{
+        display: inline;
+        left:0%;
+        
+    } 
+    .change h1{
+        flex-wrap: wrap;
+    }
+    
+    .projects{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .desc{
+        background-color: rgb(6, 192, 6);
+        text-align: center;
+        color: white;
+        box-shadow: none;
+    }
+    .recent{
+        margin-top: 30px;
+        background-color: lavender;
+        flex-direction: row;
+        box-shadow:none;
+    
+        
+        align-items: center;
+        color: black;
+    }
+    .foot{
+        align-items: center;
+        font-size: 16px;
+    }
+    @media screen and (max-width: 752px){
+    .short{
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-left: 15px;
+
+    }
+    .small_con{
+        flex-direction: column;
+        margin-left: 15px;
+    }
+    .small_con .about{
+        margin-top: 50px;
+    }
+    .foot{
+        align-items: center;
+        font-size: 16px;
+    }
+    }    
+}
+
+@media screen and (max-width: 600px){
+    body{
+        font-size: 13px;
+        font-weight: 400;
+        width: auto;
+        color:none;
+        max-width: 100%;
+        
+    }
+    .change h1{
+        font-size: 16px;
+        text-align: center;
+    }
+    .recent img{
+        max-width: 250px;
+    }
+}
+
+
+/* About page */
+
