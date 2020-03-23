@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:consolas;
+}
+.about-con{
+    width: 100%;
+    background-color: rgb(138, 236, 138);
+    padding: 40px 0;
+}
+.the-first{
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 20px;
+    margin: auto;
+}
+.about-con h1{
+    text-align: center;
+
+}
+.underline{
+    width: 110px;
+    height: 3px;
+    background-color: gold;
+    margin: 10px auto;
+}
+.about-con-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.about-con-col{
+    flex: 1;
+}
+
+.about1{
+    margin-right: 30px;
+}
+
+.about1 p{
+    text-align: justify;
+    margin-left: 10px;
+}
+.about1 a{
+    display: inline-block;
+    color: brown;
+    border: 3px solid brown;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 6px 15px;
+    text-decoration: none;
+    transition: .5s linear;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 550;
+}
+.about1:hover a{
+    color:  rgb(138, 236, 138);
+    background-color: brown;
+    
+}
+.skills{
+    padding-left: 30px;
+    flex: 1;
+}
+.skill{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.progress{
+    width: 100%;
+    height: 12px;
+    background: rgb(224, 200, 183);
+    border-radius: 12px;
+}
+.progress-bar{
+    height: 12px;
+    background-color: rgb(216, 120, 46);
+    border-radius: 12px;
+}
+.p1{
+    width: 90%;
+}
+.p2{
+    width: 80%;
+}
+.p3{
+    width: 50%;
+}
+.progress-bar span{
+    float: right;
+    margin-right: 6px;
+    line-height: 12px;
+    color: rgb(34, 22, 22);
+}
+
+.story-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: rgb(138, 236, 138);
+    box-shadow: 3px 3px 3px 3px grey;
+    font-size: 17px;
+    font-weight: 450;
+    max-width: 95%;
+    margin: 30px auto;
+}
+.story-container h2{
+    text-align: center;
+    color: brown;
+    
+}
+.story-container p{
+    margin-left: 30px;
+}
+
+.story{
+    margin-bottom: 30px;
+}
+.how{
+    margin-bottom: 30px;
+}
+.success{
+    margin-bottom: 30px;
+}
+.vision{
+    margin-bottom: 30px;
+}
+.mission{
+    margin-bottom: 30px;
+}
+/* .value{
+    margin-bottom: 30px;
+} */
+
+@media screen and (max-width: 700px){
+    .about-con-col{
+        flex: 100%;
+        margin:10px 0;
+    }
+    .about1, .skills{
+        padding: 0;
+
+    }
+    .about1{
+        text-align: justify;
+    }
+}
